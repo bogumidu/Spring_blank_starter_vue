@@ -2,15 +2,23 @@ package com.bsd.spring.model;
 
 import java.util.Objects;
 
-public final class ErrorResponse {
-    private final String errorMessage;
+public class ErrorResponse {
+
+    private String errorMessage;
 
     public ErrorResponse(String errorMessage) {
         this.errorMessage = errorMessage;
     }
 
-    public String errorMessage() {
+    public ErrorResponse() {
+    }
+
+    public String getErrorMessage() {
         return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
     }
 
     @Override
@@ -31,6 +39,5 @@ public final class ErrorResponse {
         return "ErrorResponse[" +
                 "errorMessage=" + errorMessage + ']';
     }
-
 
 }

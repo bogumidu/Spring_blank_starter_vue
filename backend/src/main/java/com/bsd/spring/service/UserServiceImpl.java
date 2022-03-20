@@ -1,12 +1,13 @@
 package com.bsd.spring.service;
 
-import com.bsd.spring.repository.UserRepository;
-import com.bsd.spring.entity.User;
+import com.bsd.skep.entity.User;
+import com.bsd.skep.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
